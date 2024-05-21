@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #F5E9E0;
+    font-family: 'MaruBuri-Regular';
+}
+
+.ListTemplate {
+    background-color: #F5E9E0;
+    width: 512px;
+    padding: 12px;
+    margin: 24px auto 0 auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 1px 3px 0px black;
+    /* overflow: hidden; */
+}
+.ListTemplate > .title {
+    background-color: #F5E9E0;
+    height: 72px;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 3px 0px black;
+    margin-bottom: 16px;
+}
+.Insert {
+    background-color: F5E9E0;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+.Insert > input {
+    width: 100%;
+    background: none;
+    outline: none;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.Insert > button {
+    background: none;
+    outline: none;
+    border: none;
+    padding: 12px;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.List {
+    padding: 0;
+    list-style: none;
+    overflow-y: auto;
+    min-height: 340px;
+}
+.ListItem {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.ListItem > .checkbox {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+}
+.ListItem > .checkbox > .text {
+    margin-left: 12px;
+    font-size: 18px;
+}
+.ListItem > .checkbox.checked .text{
+    color: gray;
+    text-decoration: line-through;
+}
+.ListItem > .category {
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+}
+.ListItem > .edit button, button:focus {
+    display: flex;
+    align-items: center;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 28px;
+}
+.ListItem > .remove {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+}
+.ListItem.category1 {
+    background-color: #F5E9E0;
+}
+.ListItem.category2 {
+    background-color: #F64D5190;    
+}
+.ListItem.category3 {
+    background-color: #F4AF0690;
+}
+.ListItem.category4 {
+    background-color: #6C85EC90;
+}
